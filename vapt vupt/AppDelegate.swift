@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  vapt vupt
-//
-//  Created by Vinicius Vendramini on 18/04/17.
-//  Copyright © 2017 vapt vupt. All rights reserved.
-//
-
 import UIKit
 import CoreData
 

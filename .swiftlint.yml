@@ -1,0 +1,7 @@
+disabled_rules:
+  - todo
+  - opening_brace
+
+line_length:
+  - 80  # warning
+  - 100 # error

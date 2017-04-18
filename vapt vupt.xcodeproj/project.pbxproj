@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603ECA1EA6479D006551DB /* AppDelegate.swift */; };
+		24603ECD1EA6479D006551DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603ECC1EA6479D006551DB /* ViewController.swift */; };
+		24603ED01EA6479D006551DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24603ECE1EA6479D006551DB /* Main.storyboard */; };
+		24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24603ED11EA6479D006551DB /* vapt_vupt.xcdatamodeld */; };
+		24603ED51EA6479D006551DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24603ED41EA6479D006551DB /* Assets.xcassets */; };
+		24603ED81EA6479D006551DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24603ED61EA6479D006551DB /* LaunchScreen.storyboard */; };
+		24603EE31EA6479D006551DB /* vapt_vuptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EE21EA6479D006551DB /* vapt_vuptTests.swift */; };
+		24603EEE1EA6479D006551DB /* vapt_vuptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24603EDF1EA6479D006551DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24603EBF1EA6479D006551DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24603EC61EA6479D006551DB;
+			remoteInfo = "vapt vupt";
+		};
+		24603EEA1EA6479D006551DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24603EBF1EA6479D006551DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24603EC61EA6479D006551DB;
+			remoteInfo = "vapt vupt";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24603EC71EA6479D006551DB /* vapt vupt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vapt vupt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24603ECA1EA6479D006551DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24603ECC1EA6479D006551DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24603ECF1EA6479D006551DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24603ED21EA6479D006551DB /* vapt_vupt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vapt_vupt.xcdatamodel; sourceTree = "<group>"; };
+		24603ED41EA6479D006551DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24603ED71EA6479D006551DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24603ED91EA6479D006551DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24603EDE1EA6479D006551DB /* vapt vuptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vapt vuptTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24603EE21EA6479D006551DB /* vapt_vuptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vapt_vuptTests.swift; sourceTree = "<group>"; };
+		24603EE41EA6479D006551DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24603EE91EA6479D006551DB /* vapt vuptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vapt vuptUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vapt_vuptUITests.swift; sourceTree = "<group>"; };
+		24603EEF1EA6479D006551DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24603EC41EA6479D006551DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24603EDB1EA6479D006551DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24603EE61EA6479D006551DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24603EBE1EA6479D006551DB = {
+			isa = PBXGroup;
+			children = (
+				24603EC91EA6479D006551DB /* vapt vupt */,
+				24603EE11EA6479D006551DB /* vapt vuptTests */,
+				24603EEC1EA6479D006551DB /* vapt vuptUITests */,
+				24603EC81EA6479D006551DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24603EC81EA6479D006551DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24603EC71EA6479D006551DB /* vapt vupt.app */,
+				24603EDE1EA6479D006551DB /* vapt vuptTests.xctest */,
+				24603EE91EA6479D006551DB /* vapt vuptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24603EC91EA6479D006551DB /* vapt vupt */ = {
+			isa = PBXGroup;
+			children = (
+				24603ECA1EA6479D006551DB /* AppDelegate.swift */,
+				24603ECC1EA6479D006551DB /* ViewController.swift */,
+				24603ECE1EA6479D006551DB /* Main.storyboard */,
+				24603ED41EA6479D006551DB /* Assets.xcassets */,
+				24603ED61EA6479D006551DB /* LaunchScreen.storyboard */,
+				24603ED91EA6479D006551DB /* Info.plist */,
+				24603ED11EA6479D006551DB /* vapt_vupt.xcdatamodeld */,
+			);
+			path = "vapt vupt";
+			sourceTree = "<group>";
+		};
+		24603EE11EA6479D006551DB /* vapt vuptTests */ = {
+			isa = PBXGroup;
+			children = (
+				24603EE21EA6479D006551DB /* vapt_vuptTests.swift */,
+				24603EE41EA6479D006551DB /* Info.plist */,
+			);
+			path = "vapt vuptTests";
+			sourceTree = "<group>";
+		};
+		24603EEC1EA6479D006551DB /* vapt vuptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */,
+				24603EEF1EA6479D006551DB /* Info.plist */,
+			);
+			path = "vapt vuptUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24603EC61EA6479D006551DB /* vapt vupt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24603EF21EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vupt" */;
+			buildPhases = (
+				24603EC31EA6479D006551DB /* Sources */,
+				24603EC41EA6479D006551DB /* Frameworks */,
+				24603EC51EA6479D006551DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vapt vupt";
+			productName = "vapt vupt";
+			productReference = 24603EC71EA6479D006551DB /* vapt vupt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24603EDD1EA6479D006551DB /* vapt vuptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24603EF51EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vuptTests" */;
+			buildPhases = (
+				24603EDA1EA6479D006551DB /* Sources */,
+				24603EDB1EA6479D006551DB /* Frameworks */,
+				24603EDC1EA6479D006551DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24603EE01EA6479D006551DB /* PBXTargetDependency */,
+			);
+			name = "vapt vuptTests";
+			productName = "vapt vuptTests";
+			productReference = 24603EDE1EA6479D006551DB /* vapt vuptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24603EE81EA6479D006551DB /* vapt vuptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24603EF81EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vuptUITests" */;
+			buildPhases = (
+				24603EE51EA6479D006551DB /* Sources */,
+				24603EE61EA6479D006551DB /* Frameworks */,
+				24603EE71EA6479D006551DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24603EEB1EA6479D006551DB /* PBXTargetDependency */,
+			);
+			name = "vapt vuptUITests";
+			productName = "vapt vuptUITests";
+			productReference = 24603EE91EA6479D006551DB /* vapt vuptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24603EBF1EA6479D006551DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "vapt vupt";
+				TargetAttributes = {
+					24603EC61EA6479D006551DB = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = HHT774898M;
+						ProvisioningStyle = Automatic;
+					};
+					24603EDD1EA6479D006551DB = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = HHT774898M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 24603EC61EA6479D006551DB;
+					};
+					24603EE81EA6479D006551DB = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = HHT774898M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 24603EC61EA6479D006551DB;
+					};
+				};
+			};
+			buildConfigurationList = 24603EC21EA6479D006551DB /* Build configuration list for PBXProject "vapt vupt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24603EBE1EA6479D006551DB;
+			productRefGroup = 24603EC81EA6479D006551DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24603EC61EA6479D006551DB /* vapt vupt */,
+				24603EDD1EA6479D006551DB /* vapt vuptTests */,
+				24603EE81EA6479D006551DB /* vapt vuptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24603EC51EA6479D006551DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24603ED81EA6479D006551DB /* LaunchScreen.storyboard in Resources */,
+				24603ED51EA6479D006551DB /* Assets.xcassets in Resources */,
+				24603ED01EA6479D006551DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24603EDC1EA6479D006551DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24603EE71EA6479D006551DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24603EC31EA6479D006551DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */,
+				24603ECD1EA6479D006551DB /* ViewController.swift in Sources */,
+				24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24603EDA1EA6479D006551DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24603EE31EA6479D006551DB /* vapt_vuptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24603EE51EA6479D006551DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24603EEE1EA6479D006551DB /* vapt_vuptUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24603EE01EA6479D006551DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24603EC61EA6479D006551DB /* vapt vupt */;
+			targetProxy = 24603EDF1EA6479D006551DB /* PBXContainerItemProxy */;
+		};
+		24603EEB1EA6479D006551DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24603EC61EA6479D006551DB /* vapt vupt */;
+			targetProxy = 24603EEA1EA6479D006551DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24603ECE1EA6479D006551DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24603ECF1EA6479D006551DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24603ED61EA6479D006551DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24603ED71EA6479D006551DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24603EF01EA6479D006551DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24603EF11EA6479D006551DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24603EF31EA6479D006551DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HHT774898M;
+				INFOPLIST_FILE = "vapt vupt/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vaptvupt.vapt-vupt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		24603EF41EA6479D006551DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HHT774898M;
+				INFOPLIST_FILE = "vapt vupt/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vaptvupt.vapt-vupt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		24603EF61EA6479D006551DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HHT774898M;
+				INFOPLIST_FILE = "vapt vuptTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vaptvupt.vapt-vuptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vapt vupt.app/vapt vupt";
+			};
+			name = Debug;
+		};
+		24603EF71EA6479D006551DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HHT774898M;
+				INFOPLIST_FILE = "vapt vuptTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vaptvupt.vapt-vuptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vapt vupt.app/vapt vupt";
+			};
+			name = Release;
+		};
+		24603EF91EA6479D006551DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HHT774898M;
+				INFOPLIST_FILE = "vapt vuptUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vaptvupt.vapt-vuptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "vapt vupt";
+			};
+			name = Debug;
+		};
+		24603EFA1EA6479D006551DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HHT774898M;
+				INFOPLIST_FILE = "vapt vuptUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vaptvupt.vapt-vuptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "vapt vupt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24603EC21EA6479D006551DB /* Build configuration list for PBXProject "vapt vupt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24603EF01EA6479D006551DB /* Debug */,
+				24603EF11EA6479D006551DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24603EF21EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vupt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24603EF31EA6479D006551DB /* Debug */,
+				24603EF41EA6479D006551DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		24603EF51EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vuptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24603EF61EA6479D006551DB /* Debug */,
+				24603EF71EA6479D006551DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		24603EF81EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vuptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24603EF91EA6479D006551DB /* Debug */,
+				24603EFA1EA6479D006551DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24603ED11EA6479D006551DB /* vapt_vupt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24603ED21EA6479D006551DB /* vapt_vupt.xcdatamodel */,
+			);
+			currentVersion = 24603ED21EA6479D006551DB /* vapt_vupt.xcdatamodel */;
+			path = vapt_vupt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 24603EBF1EA6479D006551DB /* Project object */;
+}

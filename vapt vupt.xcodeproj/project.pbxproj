@@ -135,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24603EF21EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vupt" */;
 			buildPhases = (
+				24603EFB1EA6487F006551DB /* Swiftlint */,
 				24603EC31EA6479D006551DB /* Sources */,
 				24603EC41EA6479D006551DB /* Frameworks */,
 				24603EC51EA6479D006551DB /* Resources */,
@@ -259,6 +260,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24603EFB1EA6487F006551DB /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = swiftlint;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24603EC31EA6479D006551DB /* Sources */ = {
@@ -520,6 +538,7 @@
 				24603EF41EA6479D006551DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24603EF51EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vuptTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +547,7 @@
 				24603EF71EA6479D006551DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24603EF81EA6479D006551DB /* Build configuration list for PBXNativeTarget "vapt vuptUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +556,7 @@
 				24603EFA1EA6479D006551DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,10 @@
+# macOS files
+.DS_Store
+.DS_Store?
+.Trashes
+.Spotlight-V100
+*.swp
+
+# code
+vapt vupt.xcodeproj
+

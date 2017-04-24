@@ -15,7 +15,7 @@
 		24603EE31EA6479D006551DB /* vapt_vuptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EE21EA6479D006551DB /* vapt_vuptTests.swift */; };
 		24603EEE1EA6479D006551DB /* vapt_vuptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */; };
 		248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBA1EAE8369003599DE /* LoginViewController.swift */; };
-		248E8EBF1EAE83A4003599DE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBE1EAE83A4003599DE /* CadastroViewController.swift */; };
+		248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vapt_vuptUITests.swift; sourceTree = "<group>"; };
 		24603EEF1EA6479D006551DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		248E8EBA1EAE8369003599DE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
-		248E8EBE1EAE83A4003599DE /* CadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CadastroViewController.swift; path = UI/ViewControllers/CadastroViewController.swift; sourceTree = "<group>"; };
+		248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = UI/ViewControllers/SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				248E8EBA1EAE8369003599DE /* LoginViewController.swift */,
-				248E8EBE1EAE83A4003599DE /* CadastroViewController.swift */,
+				248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */,
 				24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */,
 				24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */,
-				248E8EBF1EAE83A4003599DE /* CadastroViewController.swift in Sources */,
+				248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

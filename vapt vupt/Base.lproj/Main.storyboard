@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-1436" y="118"/>
         </scene>
-        <!--olá!-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-631.20000000000005" y="116.49175412293854"/>
         </scene>
-        <!--quem é você?-->
+        <!--Sign Up-->
         <scene sceneID="v8L-33-AKQ">
             <objects>
-                <viewController id="uqa-eK-PtS" customClass="SignUpViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sign Up" id="uqa-eK-PtS" customClass="SignUpViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pGq-Sk-KPM"/>
                         <viewControllerLayoutGuide type="bottom" id="gk8-O1-zhc"/>
@@ -126,6 +126,9 @@
                                         <rect key="frame" x="175" y="17" width="65" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="continuar"/>
+                                        <connections>
+                                            <segue destination="TDe-6w-bU9" kind="show" id="Hnl-LI-23v"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,6 +148,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kU4-rZ-PgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-631.8840579710145" y="806.25000000000011"/>
+        </scene>
+        <!--Sign Up Card-->
+        <scene sceneID="i31-DJ-gms">
+            <objects>
+                <viewController title="Sign Up Card" id="TDe-6w-bU9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J6r-9b-dOy"/>
+                        <viewControllerLayoutGuide type="bottom" id="SVH-9A-xh8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Yp-Oa-cQn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hi-cD-Y8k">
+                                <rect key="frame" x="0.0" y="672" width="414" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5A2-WC-YtD">
+                                        <rect key="frame" x="183" y="17" width="50" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="pronto!"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="registre seu cartão de crédito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hh-Wc-tKW">
+                                <rect key="frame" x="94" y="301" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="número" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZB-aG-MlU">
+                                <rect key="frame" x="106" y="330" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="validade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-w4-0uh">
+                                <rect key="frame" x="106" y="368" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="código" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmN-iU-kja">
+                                <rect key="frame" x="107" y="406" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up Card" id="LxH-9U-0fo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="72p-gB-raR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="806"/>
         </scene>
     </scenes>
 </document>

@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603ECA1EA6479D006551DB /* AppDelegate.swift */; };
-		24603ECD1EA6479D006551DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603ECC1EA6479D006551DB /* ViewController.swift */; };
 		24603ED01EA6479D006551DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24603ECE1EA6479D006551DB /* Main.storyboard */; };
 		24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24603ED11EA6479D006551DB /* vapt_vupt.xcdatamodeld */; };
 		24603ED51EA6479D006551DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24603ED41EA6479D006551DB /* Assets.xcassets */; };
 		24603ED81EA6479D006551DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24603ED61EA6479D006551DB /* LaunchScreen.storyboard */; };
 		24603EE31EA6479D006551DB /* vapt_vuptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EE21EA6479D006551DB /* vapt_vuptTests.swift */; };
 		24603EEE1EA6479D006551DB /* vapt_vuptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */; };
+		248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBA1EAE8369003599DE /* LoginViewController.swift */; };
+		248E8EBF1EAE83A4003599DE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBE1EAE83A4003599DE /* CadastroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		24603EC71EA6479D006551DB /* vapt vupt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vapt vupt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24603ECA1EA6479D006551DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24603ECC1EA6479D006551DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24603ECF1EA6479D006551DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24603ED21EA6479D006551DB /* vapt_vupt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vapt_vupt.xcdatamodel; sourceTree = "<group>"; };
 		24603ED41EA6479D006551DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		24603EE91EA6479D006551DB /* vapt vuptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vapt vuptUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vapt_vuptUITests.swift; sourceTree = "<group>"; };
 		24603EEF1EA6479D006551DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248E8EBA1EAE8369003599DE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		248E8EBE1EAE83A4003599DE /* CadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CadastroViewController.swift; path = UI/ViewControllers/CadastroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				24603ECA1EA6479D006551DB /* AppDelegate.swift */,
-				24603ECC1EA6479D006551DB /* ViewController.swift */,
+				248E8EBC1EAE836F003599DE /* UI */,
 				24603ECE1EA6479D006551DB /* Main.storyboard */,
 				24603ED41EA6479D006551DB /* Assets.xcassets */,
 				24603ED61EA6479D006551DB /* LaunchScreen.storyboard */,
@@ -126,6 +128,23 @@
 				24603EEF1EA6479D006551DB /* Info.plist */,
 			);
 			path = "vapt vuptUITests";
+			sourceTree = "<group>";
+		};
+		248E8EBC1EAE836F003599DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				248E8EBD1EAE8375003599DE /* View Controllers */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		248E8EBD1EAE8375003599DE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				248E8EBA1EAE8369003599DE /* LoginViewController.swift */,
+				248E8EBE1EAE83A4003599DE /* CadastroViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */,
 				24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */,
-				24603ECD1EA6479D006551DB /* ViewController.swift in Sources */,
 				24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */,
+				248E8EBF1EAE83A4003599DE /* CadastroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

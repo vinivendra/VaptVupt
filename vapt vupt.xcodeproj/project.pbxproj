@@ -17,6 +17,7 @@
 		248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBA1EAE8369003599DE /* LoginViewController.swift */; };
 		248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */; };
 		248E8EC11EAE862F003599DE /* SignUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */; };
+		248E8EC31EAE874A003599DE /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EC21EAE874A003599DE /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		248E8EBA1EAE8369003599DE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = UI/ViewControllers/SignUpViewController.swift; sourceTree = "<group>"; };
 		248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpCardViewController.swift; path = UI/ViewControllers/SignUpCardViewController.swift; sourceTree = "<group>"; };
+		248E8EC21EAE874A003599DE /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationViewController.swift; path = UI/ViewControllers/LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				248E8EBA1EAE8369003599DE /* LoginViewController.swift */,
 				248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */,
 				248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */,
+				248E8EC21EAE874A003599DE /* LocationViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */,
 				24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */,
 				24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */,
+				248E8EC31EAE874A003599DE /* LocationViewController.swift in Sources */,
 				248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */,
 				248E8EC11EAE862F003599DE /* SignUpCardViewController.swift in Sources */,
 			);

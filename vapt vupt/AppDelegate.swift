@@ -6,6 +6,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
+	static var singleton: AppDelegate {
+		//swiftlint:disable:next force_cast
+		return UIApplication.shared.delegate! as! AppDelegate
+	}
+
+	func changeRootViewController<T: UIViewController>(
+		toViewControllerNamed vcName: String) -> T
+	{
+		let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",
+		                                                bundle: nil)
+		let newViewController =
+			mainStoryboard.instantiateViewController(
+				withIdentifier: vcName)
+				as! T // swiftlint:disable:this force_cast
+
+		window?.rootViewController = newViewController
+		return newViewController
+	}
+
 	func application(
 		_ application: UIApplication,
 		didFinishLaunchingWithOptions

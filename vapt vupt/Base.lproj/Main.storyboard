@@ -300,7 +300,7 @@ onde você está?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Digitar"/>
                                 <connections>
-                                    <segue destination="wFl-Ue-Pbk" kind="presentation" id="IOU-gE-FHw"/>
+                                    <segue destination="wFl-Ue-Pbk" kind="presentation" identifier="showTypeCodeVCSegue" id="IOU-gE-FHw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXV-fc-6h9">

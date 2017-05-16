@@ -9,6 +9,8 @@ AlertDelegate
 
 	@IBOutlet weak var blackView: UIView!
 
+	weak var modalDelegate: ModalDelegate?
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -67,7 +69,7 @@ AlertDelegate
 	}
 
 	func dismiss() {
-
+		modalDelegate?.dismissModalViewController()
 	}
 
 	// MARK: IBActions

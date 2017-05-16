@@ -13,7 +13,7 @@ class ScanViewController: UIViewController, AlertDelegate {
 		hideAddProductView()
 	}
 
-	// MARK: AlertDelegate
+	// MARK: Alert Delegate
 	func didPressYes(_ sender: Any) {
 		if sender as? AddProductView == addProductView {
 			hideAddProductView()

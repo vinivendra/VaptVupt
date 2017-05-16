@@ -21,6 +21,7 @@
 		24AB0AB11ECB8E8A00870BE6 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB0AB01ECB8E8A00870BE6 /* AddProductView.swift */; };
 		24AB0AB41ECB8EAB00870BE6 /* AddProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AB0AB31ECB8EAB00870BE6 /* AddProductView.xib */; };
 		24AB0AB61ECB983000870BE6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB0AB51ECB983000870BE6 /* UIView.swift */; };
+		24AB0AB81ECB9DF800870BE6 /* TypeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB0AB71ECB9DF800870BE6 /* TypeCodeViewController.swift */; };
 		24D7D7441EC297F6005BB9A6 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D7D7431EC297F6005BB9A6 /* EmailLoginViewController.swift */; };
 		24D7D7471EC29BE9005BB9A6 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D7D7461EC29BE9005BB9A6 /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		24AB0AB01ECB8E8A00870BE6 /* AddProductView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddProductView.swift; path = UI/UI/AddProductView.swift; sourceTree = "<group>"; };
 		24AB0AB31ECB8EAB00870BE6 /* AddProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddProductView.xib; path = UI/UI/AddProductView.xib; sourceTree = "<group>"; };
 		24AB0AB51ECB983000870BE6 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = UI/UIView.swift; sourceTree = "<group>"; };
+		24AB0AB71ECB9DF800870BE6 /* TypeCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypeCodeViewController.swift; path = UI/ViewControllers/TypeCodeViewController.swift; sourceTree = "<group>"; };
 		24D7D7431EC297F6005BB9A6 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmailLoginViewController.swift; path = UI/ViewControllers/EmailLoginViewController.swift; sourceTree = "<group>"; };
 		24D7D7451EC2994A005BB9A6 /* design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = design; sourceTree = "<group>"; };
 		24D7D7461EC29BE9005BB9A6 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanViewController.swift; path = UI/ViewControllers/ScanViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				24D7D7461EC29BE9005BB9A6 /* ScanViewController.swift */,
 				248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */,
 				248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */,
+				24AB0AB71ECB9DF800870BE6 /* TypeCodeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */,
 				24AB0AB11ECB8E8A00870BE6 /* AddProductView.swift in Sources */,
 				24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */,
+				24AB0AB81ECB9DF800870BE6 /* TypeCodeViewController.swift in Sources */,
 				248E8EC31EAE874A003599DE /* LocationViewController.swift in Sources */,
 				248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */,
 				248E8EC11EAE862F003599DE /* SignUpCardViewController.swift in Sources */,

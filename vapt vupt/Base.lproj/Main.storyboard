@@ -198,6 +198,63 @@ onde você está?</string>
             </objects>
             <point key="canvasLocation" x="144.92753623188406" y="117.39130434782609"/>
         </scene>
+        <!--Type Code View Controller-->
+        <scene sceneID="7cp-y3-U0m">
+            <objects>
+                <viewController id="wFl-Ue-Pbk" customClass="TypeCodeViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7JV-Yb-nqu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ipC-sH-9O7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bt6-e5-E9I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SU-zS-09F">
+                                <rect key="frame" x="364" y="28" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="xButtonPressed:" destination="wFl-Ue-Pbk" eventType="touchUpInside" id="2mc-Qv-VMg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digite o código de barras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1x-hq-aOK">
+                                <rect key="frame" x="111" y="28" width="193" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2n-ZK-ilZ">
+                                <rect key="frame" x="20" y="249" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="search"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nWh-Ij-r5x" userLabel="blackView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3N-VI-KVW" userLabel="addProductView" customClass="AddProductView" customModule="vapt_vupt" customModuleProvider="target">
+                                <rect key="frame" x="70" y="79" width="275" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="addProductView" destination="f3N-VI-KVW" id="9iJ-US-PjM"/>
+                        <outlet property="blackView" destination="nWh-Ij-r5x" id="XUU-RI-uDh"/>
+                        <outlet property="textField" destination="N2n-ZK-ilZ" id="XgQ-s2-PXl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stW-va-b9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937.68115942028987" y="-605.70652173913049"/>
+        </scene>
         <!--Scan View Controller-->
         <scene sceneID="Erv-9s-hR0">
             <objects>
@@ -242,6 +299,9 @@ onde você está?</string>
                                 <rect key="frame" x="348" y="610" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Digitar"/>
+                                <connections>
+                                    <segue destination="wFl-Ue-Pbk" kind="presentation" id="IOU-gE-FHw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXV-fc-6h9">
                                 <rect key="frame" x="308" y="648" width="86" height="30"/>

@@ -48,8 +48,12 @@ class ScanViewController: UIViewController, AlertDelegate, ModalDelegate {
 	// MARK: Navigation
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "showTypeCodeVCSegue",
-			let typeCodeVC = segue.destination as? TypeCodeViewController {
-			typeCodeVC.modalDelegate = self
+			let newVC = segue.destination as? TypeCodeViewController {
+			newVC.modalDelegate = self
+		} else if segue.identifier == "showPromotionsVCSegue",
+			let navVC = segue.destination as? UINavigationController,
+			let newVC = navVC.topViewController as? PromotionsViewController {
+			newVC.modalDelegate = self
 		}
 	}
 }

@@ -32,3 +32,8 @@ extension UIView {
 		return view
 	}
 }
+
+protocol AlertDelegate: class {
+	func didPressYes(_ sender: Any)
+	func didPressNo(_ sender: Any)
+}

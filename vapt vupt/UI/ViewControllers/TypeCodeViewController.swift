@@ -1,7 +1,7 @@
 import UIKit
 
 class TypeCodeViewController: UIViewController, UITextFieldDelegate,
-AlertDelegate
+AlertDelegate, ModalDelegating
 {
 	@IBOutlet weak var textField: UITextField!
 
@@ -70,10 +70,5 @@ AlertDelegate
 
 	func dismiss() {
 		modalDelegate?.dismissModalViewController()
-	}
-
-	// MARK: IBActions
-	@IBAction func xButtonPressed(_ sender: Any) {
-		dismiss()
 	}
 }

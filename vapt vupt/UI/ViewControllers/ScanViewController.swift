@@ -47,13 +47,37 @@ class ScanViewController: UIViewController, AlertDelegate, ModalDelegate {
 
 	// MARK: Navigation
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "showTypeCodeVCSegue",
-			let newVC = segue.destination as? TypeCodeViewController {
-			newVC.modalDelegate = self
-		} else if segue.identifier == "showPromotionsVCSegue",
-			let navVC = segue.destination as? UINavigationController,
-			let newVC = navVC.topViewController as? PromotionsViewController {
-			newVC.modalDelegate = self
+		// Create the new view controller instance to insert into the given 
+		// navVC
+		var newViewController: UIViewController? = nil
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		if segue.identifier == "showTypeCodeVCSegue" {
+			newViewController = storyboard.instantiateViewController(
+				withIdentifier: "TypeCodeViewController")
+		} else if segue.identifier == "showPromotionsVCSegue" {
+			newViewController = storyboard.instantiateViewController(
+				withIdentifier: "PromotionsViewController")
+		}
+
+		// Ensure we created the view controller successfully
+		guard let newVC = newViewController,
+			let navViewController = segue.destination as? UINavigationController
+			else {
+				assertionFailure(
+					"Failed to instantiate view controller from storyboard")
+				return
+		}
+
+		newVC.navigationItem.rightBarButtonItem =
+			UIBarButtonItem(title: "X",
+							style: .plain,
+							target: self,
+							action: #selector(dismissModalViewController))
+		navViewController.setViewControllers([newVC], animated: false)
+
+		// Give the view controller a way to dismiss itself if it wants to
+		if let modalDelegatingVC = newVC as? ModalDelegating {
+			modalDelegatingVC.modalDelegate = self
 		}
 	}
 }

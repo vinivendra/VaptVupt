@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f4o-fR-79M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Eq4-Ai-9kM">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -198,10 +198,10 @@ onde você está?</string>
             </objects>
             <point key="canvasLocation" x="144.92753623188406" y="117.39130434782609"/>
         </scene>
-        <!--Type Code View Controller-->
+        <!--Type Code-->
         <scene sceneID="7cp-y3-U0m">
             <objects>
-                <viewController id="wFl-Ue-Pbk" customClass="TypeCodeViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TypeCodeViewController" title="Type Code" id="wFl-Ue-Pbk" customClass="TypeCodeViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7JV-Yb-nqu"/>
                         <viewControllerLayoutGuide type="bottom" id="ipC-sH-9O7"/>
@@ -210,21 +210,6 @@ onde você está?</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SU-zS-09F">
-                                <rect key="frame" x="364" y="28" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="X"/>
-                                <connections>
-                                    <action selector="xButtonPressed:" destination="wFl-Ue-Pbk" eventType="touchUpInside" id="2mc-Qv-VMg"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digite o código de barras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1x-hq-aOK">
-                                <rect key="frame" x="111" y="28" width="193" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2n-ZK-ilZ">
                                 <rect key="frame" x="20" y="249" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -245,6 +230,7 @@ onde você está?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="digite o código" id="Rtp-Bm-lfG"/>
                     <connections>
                         <outlet property="addProductView" destination="f3N-VI-KVW" id="9iJ-US-PjM"/>
                         <outlet property="blackView" destination="nWh-Ij-r5x" id="XUU-RI-uDh"/>
@@ -253,7 +239,7 @@ onde você está?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stW-va-b9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.68115942028987" y="-605.70652173913049"/>
+            <point key="canvasLocation" x="2645" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="snM-W0-mVx">
@@ -263,18 +249,15 @@ onde você está?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="mEE-fQ-arG" kind="relationship" relationship="rootViewController" id="3zN-e8-FHV"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgl-KP-DFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-607"/>
+            <point key="canvasLocation" x="1745" y="116"/>
         </scene>
         <!--Promotions-->
         <scene sceneID="Zb5-6s-xfb">
             <objects>
-                <viewController title="Promotions" id="mEE-fQ-arG" customClass="PromotionsViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PromotionsViewController" title="Promotions" id="mEE-fQ-arG" customClass="PromotionsViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BLh-My-8mp"/>
                         <viewControllerLayoutGuide type="bottom" id="aRU-Dv-MjX"/>
@@ -352,7 +335,7 @@ onde você está?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Digitar"/>
                                 <connections>
-                                    <segue destination="wFl-Ue-Pbk" kind="presentation" identifier="showTypeCodeVCSegue" id="IOU-gE-FHw"/>
+                                    <segue destination="8kA-Ur-PVH" kind="presentation" identifier="showTypeCodeVCSegue" id="Iw4-az-vru"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXV-fc-6h9">
@@ -570,4 +553,7 @@ onde você está?</string>
     <resources>
         <image name="location" width="192" height="192"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oqu-gj-YMF"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -126,8 +126,7 @@
 				24603ECA1EA6479D006551DB /* AppDelegate.swift */,
 				248E8EBC1EAE836F003599DE /* UI */,
 				24603ECE1EA6479D006551DB /* Main.storyboard */,
-				24AB0AB91ECBA33700870BE6 /* UIViewController.swift */,
-				24AB0ABB1ECBB0BC00870BE6 /* PromotionsViewController.swift */,
+				2463BA811ED48987007EBE3F /* Extensions */,
 				24603ED41EA6479D006551DB /* Assets.xcassets */,
 				24603ED61EA6479D006551DB /* LaunchScreen.storyboard */,
 				24603ED91EA6479D006551DB /* Info.plist */,
@@ -154,10 +153,18 @@
 			path = "vapt vuptUITests";
 			sourceTree = "<group>";
 		};
-		248E8EBC1EAE836F003599DE /* UI */ = {
+		2463BA811ED48987007EBE3F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				24AB0AB51ECB983000870BE6 /* UIView.swift */,
+				24AB0AB91ECBA33700870BE6 /* UIViewController.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		248E8EBC1EAE836F003599DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				248E8EBD1EAE8375003599DE /* View Controllers */,
 				24AB0AB21ECB8E9200870BE6 /* UI */,
 			);
@@ -170,6 +177,7 @@
 				24D7D7431EC297F6005BB9A6 /* EmailLoginViewController.swift */,
 				248E8EC21EAE874A003599DE /* LocationViewController.swift */,
 				248E8EBA1EAE8369003599DE /* LoginViewController.swift */,
+				24AB0ABB1ECBB0BC00870BE6 /* PromotionsViewController.swift */,
 				24D7D7461EC29BE9005BB9A6 /* ScanViewController.swift */,
 				248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */,
 				248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */,

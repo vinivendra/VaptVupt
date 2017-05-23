@@ -57,6 +57,9 @@ class ScanViewController: UIViewController, AlertDelegate, ModalDelegate {
 		} else if segue.identifier == "showPromotionsVCSegue" {
 			newViewController = storyboard.instantiateViewController(
 				withIdentifier: "PromotionsViewController")
+		} else if segue.identifier == "showMyProductsVCSegue" {
+			newViewController = storyboard.instantiateViewController(
+				withIdentifier: "MyProductsViewController")
 		}
 
 		// Ensure we created the view controller successfully

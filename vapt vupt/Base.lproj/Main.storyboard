@@ -241,6 +241,39 @@ onde você está?</string>
             </objects>
             <point key="canvasLocation" x="2645" y="116"/>
         </scene>
+        <!--My Products-->
+        <scene sceneID="Cp1-k3-7iE">
+            <objects>
+                <viewController storyboardIdentifier="MyProductsViewController" title="My Products" id="fvl-cr-wfV" customClass="MyProductsViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="neo-rP-z23"/>
+                        <viewControllerLayoutGuide type="bottom" id="ej5-G4-akL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JB7-kG-3fb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tMq-Zv-jf9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fvl-cr-wfV" id="4ea-fE-Tgz"/>
+                                    <outlet property="delegate" destination="fvl-cr-wfV" id="nwv-Lb-kDy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="minhas compras" id="kwU-eF-2GN"/>
+                    <connections>
+                        <outlet property="tableView" destination="tMq-Zv-jf9" id="h1J-Sm-0aK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDy-Mt-sFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2644.9275362318845" y="860.86956521739137"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="snM-W0-mVx">
             <objects>
@@ -321,6 +354,9 @@ onde você está?</string>
                                 <rect key="frame" x="281" y="534" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Minhas compras"/>
+                                <connections>
+                                    <segue destination="8kA-Ur-PVH" kind="presentation" identifier="showMyProductsVCSegue" id="lts-jY-FU9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hD-tC-rel">
                                 <rect key="frame" x="316" y="572" width="78" height="30"/>
@@ -554,6 +590,6 @@ onde você está?</string>
         <image name="location" width="192" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oqu-gj-YMF"/>
+        <segue reference="lts-jY-FU9"/>
     </inferredMetricsTieBreakers>
 </document>

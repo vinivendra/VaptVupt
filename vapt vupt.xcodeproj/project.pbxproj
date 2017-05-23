@@ -14,6 +14,7 @@
 		24603ED81EA6479D006551DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24603ED61EA6479D006551DB /* LaunchScreen.storyboard */; };
 		24603EE31EA6479D006551DB /* vapt_vuptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EE21EA6479D006551DB /* vapt_vuptTests.swift */; };
 		24603EEE1EA6479D006551DB /* vapt_vuptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */; };
+		2463BA831ED48D0B007EBE3F /* MyProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2463BA821ED48D0B007EBE3F /* MyProductsViewController.swift */; };
 		248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBA1EAE8369003599DE /* LoginViewController.swift */; };
 		248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */; };
 		248E8EC11EAE862F003599DE /* SignUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */; };
@@ -59,6 +60,7 @@
 		24603EE91EA6479D006551DB /* vapt vuptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vapt vuptUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vapt_vuptUITests.swift; sourceTree = "<group>"; };
 		24603EEF1EA6479D006551DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2463BA821ED48D0B007EBE3F /* MyProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyProductsViewController.swift; path = UI/ViewControllers/MyProductsViewController.swift; sourceTree = "<group>"; };
 		248E8EBA1EAE8369003599DE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = UI/ViewControllers/SignUpViewController.swift; sourceTree = "<group>"; };
 		248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpCardViewController.swift; path = UI/ViewControllers/SignUpCardViewController.swift; sourceTree = "<group>"; };
@@ -174,13 +176,14 @@
 		248E8EBD1EAE8375003599DE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				248E8EBA1EAE8369003599DE /* LoginViewController.swift */,
+				248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */,
+				248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */,
 				24D7D7431EC297F6005BB9A6 /* EmailLoginViewController.swift */,
 				248E8EC21EAE874A003599DE /* LocationViewController.swift */,
-				248E8EBA1EAE8369003599DE /* LoginViewController.swift */,
-				24AB0ABB1ECBB0BC00870BE6 /* PromotionsViewController.swift */,
 				24D7D7461EC29BE9005BB9A6 /* ScanViewController.swift */,
-				248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */,
-				248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */,
+				2463BA821ED48D0B007EBE3F /* MyProductsViewController.swift */,
+				24AB0ABB1ECBB0BC00870BE6 /* PromotionsViewController.swift */,
 				24AB0AB71ECB9DF800870BE6 /* TypeCodeViewController.swift */,
 			);
 			name = "View Controllers";
@@ -361,6 +364,7 @@
 				24AB0AB81ECB9DF800870BE6 /* TypeCodeViewController.swift in Sources */,
 				24AB0ABC1ECBB0BC00870BE6 /* PromotionsViewController.swift in Sources */,
 				248E8EC31EAE874A003599DE /* LocationViewController.swift in Sources */,
+				2463BA831ED48D0B007EBE3F /* MyProductsViewController.swift in Sources */,
 				248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */,
 				248E8EC11EAE862F003599DE /* SignUpCardViewController.swift in Sources */,
 				24D7D7471EC29BE9005BB9A6 /* ScanViewController.swift in Sources */,

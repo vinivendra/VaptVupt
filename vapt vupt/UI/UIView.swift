@@ -18,11 +18,10 @@ extension UIView {
 	/// view. Call this method in every init.
 	@discardableResult
 	func loadAndFillWithNib<T: UIView>() -> T? {
-		guard let className = String(describing:
-			type(of: self)).components(separatedBy: ".").last,
-			let view = Bundle.main.loadNibNamed(className,
-			                                    owner: self,
-			                                    options: nil)?[0] as? T
+		let className = String(typeOf: self)
+		guard let view = Bundle.main.loadNibNamed(className,
+		                                          owner: self,
+		                                          options: nil)?[0] as? T
 			else
 		{
 			return nil

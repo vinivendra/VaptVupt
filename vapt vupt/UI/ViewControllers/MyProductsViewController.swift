@@ -23,12 +23,26 @@ class MyProductsViewController: UIViewController, UITableViewDataSource,
 
 	func tableView(_ tableView: UITableView,
 	               cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let reuseIdentifier = "UITableViewCell"
 		let cell = tableView.dequeueReusableCell(
-			withIdentifier: "UITableViewCell") ??
-			UITableViewCell()
+			withIdentifier: reuseIdentifier) ??
+			UITableViewCell(style: .value2, reuseIdentifier: reuseIdentifier)
 
-		cell.textLabel?.text = "Bridageiro - 300ml"
-		cell.detailTextLabel?.text = "x\(indexPath.row)"
+		let cartProduct = CartProduct.brigadeiro
+		cell.textLabel?.text = "\(cartProduct.shortName) - " +
+			"\(cartProduct.shortSize)"
+		cell.detailTextLabel?.text = "x\(cartProduct.amount)"
 		return cell
+	}
+
+	// MARK: UI Table View Delegate
+	func tableView(_ tableView: UITableView,
+	               didSelectRowAt indexPath: IndexPath) {
+		let productSingleViewController: ProductSingleViewController =
+			UIStoryboard.instantiateViewController()
+		productSingleViewController.populate(
+			withCartProduct: CartProduct.brigadeiro)
+		navigationController?.pushViewController(productSingleViewController,
+		                                         animated: true)
 	}
 }

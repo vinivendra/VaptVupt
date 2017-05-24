@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24295E4D1ED4FD6100A07B48 /* StandardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24295E4C1ED4FD6100A07B48 /* StandardLibrary.swift */; };
+		24295E511ED4FDB000A07B48 /* CartProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24295E501ED4FDB000A07B48 /* CartProduct.swift */; };
 		24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603ECA1EA6479D006551DB /* AppDelegate.swift */; };
 		24603ED01EA6479D006551DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24603ECE1EA6479D006551DB /* Main.storyboard */; };
 		24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24603ED11EA6479D006551DB /* vapt_vupt.xcdatamodeld */; };
@@ -15,6 +17,9 @@
 		24603EE31EA6479D006551DB /* vapt_vuptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EE21EA6479D006551DB /* vapt_vuptTests.swift */; };
 		24603EEE1EA6479D006551DB /* vapt_vuptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */; };
 		2463BA831ED48D0B007EBE3F /* MyProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2463BA821ED48D0B007EBE3F /* MyProductsViewController.swift */; };
+		2463BA851ED49165007EBE3F /* ProductSingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2463BA841ED49165007EBE3F /* ProductSingleViewController.swift */; };
+		2463BA891ED4989F007EBE3F /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2463BA881ED4989F007EBE3F /* UIStoryboard.swift */; };
+		2480F53E1ED4AF71002EFAB3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2480F53D1ED4AF71002EFAB3 /* Product.swift */; };
 		248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBA1EAE8369003599DE /* LoginViewController.swift */; };
 		248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */; };
 		248E8EC11EAE862F003599DE /* SignUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */; };
@@ -47,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24295E4C1ED4FD6100A07B48 /* StandardLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandardLibrary.swift; path = Extensions/StandardLibrary.swift; sourceTree = "<group>"; };
+		24295E501ED4FDB000A07B48 /* CartProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartProduct.swift; path = Model/CartProduct.swift; sourceTree = "<group>"; };
 		24603EC71EA6479D006551DB /* vapt vupt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vapt vupt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24603ECA1EA6479D006551DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24603ECF1EA6479D006551DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +68,9 @@
 		24603EED1EA6479D006551DB /* vapt_vuptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vapt_vuptUITests.swift; sourceTree = "<group>"; };
 		24603EEF1EA6479D006551DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2463BA821ED48D0B007EBE3F /* MyProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyProductsViewController.swift; path = UI/ViewControllers/MyProductsViewController.swift; sourceTree = "<group>"; };
+		2463BA841ED49165007EBE3F /* ProductSingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductSingleViewController.swift; path = UI/ViewControllers/ProductSingleViewController.swift; sourceTree = "<group>"; };
+		2463BA881ED4989F007EBE3F /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboard.swift; path = UI/UIStoryboard.swift; sourceTree = "<group>"; };
+		2480F53D1ED4AF71002EFAB3 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		248E8EBA1EAE8369003599DE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		248E8EBE1EAE83A4003599DE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = UI/ViewControllers/SignUpViewController.swift; sourceTree = "<group>"; };
 		248E8EC01EAE862F003599DE /* SignUpCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpCardViewController.swift; path = UI/ViewControllers/SignUpCardViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24295E4E1ED4FD6700A07B48 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				24295E4C1ED4FD6100A07B48 /* StandardLibrary.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		24295E4F1ED4FD9800A07B48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2480F53D1ED4AF71002EFAB3 /* Product.swift */,
+				24295E501ED4FDB000A07B48 /* CartProduct.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		24603EBE1EA6479D006551DB = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				24603ECA1EA6479D006551DB /* AppDelegate.swift */,
+				24295E4F1ED4FD9800A07B48 /* Model */,
+				24295E4E1ED4FD6700A07B48 /* Extension */,
 				248E8EBC1EAE836F003599DE /* UI */,
 				24603ECE1EA6479D006551DB /* Main.storyboard */,
 				2463BA811ED48987007EBE3F /* Extensions */,
@@ -158,6 +187,7 @@
 		2463BA811ED48987007EBE3F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2463BA881ED4989F007EBE3F /* UIStoryboard.swift */,
 				24AB0AB51ECB983000870BE6 /* UIView.swift */,
 				24AB0AB91ECBA33700870BE6 /* UIViewController.swift */,
 			);
@@ -183,6 +213,7 @@
 				248E8EC21EAE874A003599DE /* LocationViewController.swift */,
 				24D7D7461EC29BE9005BB9A6 /* ScanViewController.swift */,
 				2463BA821ED48D0B007EBE3F /* MyProductsViewController.swift */,
+				2463BA841ED49165007EBE3F /* ProductSingleViewController.swift */,
 				24AB0ABB1ECBB0BC00870BE6 /* PromotionsViewController.swift */,
 				24AB0AB71ECB9DF800870BE6 /* TypeCodeViewController.swift */,
 			);
@@ -354,8 +385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24295E511ED4FDB000A07B48 /* CartProduct.swift in Sources */,
 				24AB0AB61ECB983000870BE6 /* UIView.swift in Sources */,
 				248E8EBB1EAE8369003599DE /* LoginViewController.swift in Sources */,
+				2463BA851ED49165007EBE3F /* ProductSingleViewController.swift in Sources */,
 				24AB0ABA1ECBA33700870BE6 /* UIViewController.swift in Sources */,
 				24D7D7441EC297F6005BB9A6 /* EmailLoginViewController.swift in Sources */,
 				24603ED31EA6479D006551DB /* vapt_vupt.xcdatamodeld in Sources */,
@@ -363,7 +396,10 @@
 				24603ECB1EA6479D006551DB /* AppDelegate.swift in Sources */,
 				24AB0AB81ECB9DF800870BE6 /* TypeCodeViewController.swift in Sources */,
 				24AB0ABC1ECBB0BC00870BE6 /* PromotionsViewController.swift in Sources */,
+				2480F53E1ED4AF71002EFAB3 /* Product.swift in Sources */,
+				24295E4D1ED4FD6100A07B48 /* StandardLibrary.swift in Sources */,
 				248E8EC31EAE874A003599DE /* LocationViewController.swift in Sources */,
+				2463BA891ED4989F007EBE3F /* UIStoryboard.swift in Sources */,
 				2463BA831ED48D0B007EBE3F /* MyProductsViewController.swift in Sources */,
 				248E8EBF1EAE83A4003599DE /* SignUpViewController.swift in Sources */,
 				248E8EC11EAE862F003599DE /* SignUpCardViewController.swift in Sources */,

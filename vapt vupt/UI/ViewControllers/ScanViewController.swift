@@ -47,39 +47,38 @@ class ScanViewController: UIViewController, AlertDelegate, ModalDelegate {
 
 	// MARK: Navigation
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		// Create the new view controller instance to insert into the given 
-		// navVC
-		var newViewController: UIViewController? = nil
-		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		if segue.identifier == "showTypeCodeVCSegue" {
-			newViewController = storyboard.instantiateViewController(
-				withIdentifier: "TypeCodeViewController")
-		} else if segue.identifier == "showPromotionsVCSegue" {
-			newViewController = storyboard.instantiateViewController(
-				withIdentifier: "PromotionsViewController")
-		} else if segue.identifier == "showMyProductsVCSegue" {
-			newViewController = storyboard.instantiateViewController(
-				withIdentifier: "MyProductsViewController")
+		let newViewController: UIViewController
+		switch segue.identifier! {
+		case "showTypeCodeVCSegue":
+			let newVC: TypeCodeViewController =
+				UIStoryboard.instantiateViewController()
+			newViewController = newVC
+		case "showPromotionsVCSegue":
+			let newVC: PromotionsViewController =
+				UIStoryboard.instantiateViewController()
+			newViewController = newVC
+		case "showMyProductsVCSegue":
+			let newVC: MyProductsViewController =
+				UIStoryboard.instantiateViewController()
+			newViewController = newVC
+		default:
+			assertionFailure("Unsupported segue leaving Scan View Controller")
+			return
 		}
 
-		// Ensure we created the view controller successfully
-		guard let newVC = newViewController,
-			let navViewController = segue.destination as? UINavigationController
-			else {
-				assertionFailure(
-					"Failed to instantiate view controller from storyboard")
-				return
-		}
+		//swiftlint:disable:next force_cast
+		let navViewController = segue.destination as! UINavigationController
 
-		newVC.navigationItem.rightBarButtonItem =
+		newViewController.navigationItem.rightBarButtonItem =
 			UIBarButtonItem(title: "X",
 							style: .plain,
 							target: self,
 							action: #selector(dismissModalViewController))
-		navViewController.setViewControllers([newVC], animated: false)
+		navViewController.setViewControllers([newViewController],
+		                                     animated: false)
 
 		// Give the view controller a way to dismiss itself if it wants to
-		if let modalDelegatingVC = newVC as? ModalDelegating {
+		if let modalDelegatingVC = newViewController as? ModalDelegating {
 			modalDelegatingVC.modalDelegate = self
 		}
 	}

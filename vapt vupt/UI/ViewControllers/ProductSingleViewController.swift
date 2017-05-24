@@ -23,7 +23,6 @@ class ProductSingleViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		navigationItem.title = "Brigadeiro"
-		// TODO: Use default (translated) back button item
 
 		populate(withCartProduct: cartProduct)
 	}

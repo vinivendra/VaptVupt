@@ -274,6 +274,38 @@ onde você está?</string>
             </objects>
             <point key="canvasLocation" x="2644.9275362318845" y="860.86956521739137"/>
         </scene>
+        <!--Preferences-->
+        <scene sceneID="k0Z-AJ-Mlf">
+            <objects>
+                <viewController storyboardIdentifier="PreferencesViewController" title="Preferences" id="GTw-Yj-Ivp" customClass="PreferencesViewController" customModule="vapt_vupt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bBI-BI-Q1D"/>
+                        <viewControllerLayoutGuide type="bottom" id="cMk-dr-d2F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VgM-4d-CTi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x5E-FJ-ck9">
+                                <rect key="frame" x="0.0" y="-1" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="GTw-Yj-Ivp" id="5ur-9f-jpB"/>
+                                    <outlet property="delegate" destination="GTw-Yj-Ivp" id="GZ2-4T-Taz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="x5E-FJ-ck9" id="AM0-ag-ENh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5S-Cn-dfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2644.9275362318845" y="1597.8260869565217"/>
+        </scene>
         <!--Product Single-->
         <scene sceneID="gEJ-E6-WZl">
             <objects>
@@ -469,6 +501,9 @@ onde você está?</string>
                                 <rect key="frame" x="308" y="648" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Preferências"/>
+                                <connections>
+                                    <segue destination="8kA-Ur-PVH" kind="presentation" identifier="showPreferencesVCSegue" id="xWY-WB-MfW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5q-Od-ttL">
                                 <rect key="frame" x="354" y="686" width="40" height="30"/>
@@ -682,6 +717,6 @@ onde você está?</string>
         <image name="location" width="192" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lts-jY-FU9"/>
+        <segue reference="xWY-WB-MfW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -61,6 +61,10 @@ class ScanViewController: UIViewController, AlertDelegate, ModalDelegate {
 			let newVC: MyProductsViewController =
 				UIStoryboard.instantiateViewController()
 			newViewController = newVC
+		case "showPreferencesVCSegue":
+			let newVC: PreferencesViewController =
+				UIStoryboard.instantiateViewController()
+			newViewController = newVC
 		default:
 			assertionFailure("Unsupported segue leaving Scan View Controller")
 			return

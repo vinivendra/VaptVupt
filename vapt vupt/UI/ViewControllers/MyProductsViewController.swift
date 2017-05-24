@@ -26,7 +26,7 @@ class MyProductsViewController: UIViewController, UITableViewDataSource,
 		let reuseIdentifier = "UITableViewCell"
 		let cell = tableView.dequeueReusableCell(
 			withIdentifier: reuseIdentifier) ??
-			UITableViewCell(style: .value2, reuseIdentifier: reuseIdentifier)
+			UITableViewCell(style: .subtitle, reuseIdentifier: reuseIdentifier)
 
 		let cartProduct = CartProduct.brigadeiro
 		cell.textLabel?.text = "\(cartProduct.shortName) - " +
